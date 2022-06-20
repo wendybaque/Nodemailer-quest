@@ -98,6 +98,7 @@ class ItemController {
         user: process.env.SMTP_SENDIN_USER,
         pass: process.env.SMTP_SENDIN_PASSWORD,
       },
+      ssl: { rejectUnauthorized: false },
     });
 
     // Now, we can set up the body of our mail :
